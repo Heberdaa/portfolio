@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css" />
+    <script src="https://kit.fontawesome.com/eb0aeb521b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="encabezado">
+        <a href="../index.html"><i class="fa-sharp fa-regular fa-heart"></i></a>  
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#acerca">Acerca de mi</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="titulo_seccion">Contacto</h2>
+        <div class="form_contenedor">
+          <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+               
+                <div class="form-group">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+              </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+        
+    <footer id="footer">
+        <h3>Redes sociales y links</h3>
+        <ul>
+            <a href="https://www.instagram.com/duran_heber/">Instagram</a>
+            <a href="https://onepace.net/es">op</a>
+        </ul>
+    </footer>
+    
+</body>
+</html>
