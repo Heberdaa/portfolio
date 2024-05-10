@@ -1,0 +1,158 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(120, 49, 1);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    background-color: rgba(243, 99, 21, 0.775);
+    justify-content: space-between;
+    padding-right: 3em;
+    padding-left: 1em;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5em;
+    padding: 5 em;
+}
+
+header a i {
+    font-size: 2em;
+    padding: .3em;
+    color: rgb(0, 0, 0);
+}
+
+main {
+    display: block;
+    padding: 1em;
+}
+
+#seccion-principal {
+    margin: 0;
+    padding: 0;
+}
+
+#seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 2em;
+    color: white;
+    background-color: black;
+    text-align: justify;
+}
+
+.acerca-de{margin-right: 1em;}
+
+.acerca-imagen {margin: 1em; padding: 0; border: 0;}
+
+.acerca-imagen img {width: 200px;}
+
+#seccion-2 {margin: 0; padding: 0; border:solid white}
+
+#seccion-2 img {width: 100%;}
+
+
+#footer{
+    background-color: rgb(203, 203, 66);
+    display: block;
+    margin: 0;
+    padding: 0;
+   /* border: solid;*/
+}
+
+footer h3, footer ul{
+    margin: .5em;
+    padding: .5em;
+    background-color: rgb(203, 203, 66);
+}
+
+footer h3 {margin-top: 0; padding-top: 0;}
+footer ul {margin-bottom: 0; padding-bottom: 0;}
+
+/*menu*/
+#check {display: none;}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 48px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+        background-color: aqua;
+    }
+    .acerca-de {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh; /* vh: viewport head, el largo de pantalla que ocupa*/
+        background-color: blueviolet;
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul { /* "~" selecciona todos los elementos ul que se encuentren después de check*/
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: coral;
+    }
+
+    #seccion-1 {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+  }

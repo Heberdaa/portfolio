@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="styles" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera hueb</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/eb0aeb521b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <a href="index.html"> <i class="fa-sharp fa-regular fa-heart"></i></a>  
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de mi</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="formulario/formulario.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <main id="seccion-principal">
+            <section id="seccion-1">
+                <div class="acerca-de">
+                    <h2 class="titulo1">Me presento</h2>
+                    <p class="parrafo1">Soy Heber, un simple ciudadano de Mendoza.</p>
+                    <p class="parrafo2">Bienvenido a mi página web, o mi primera página web, aclaro por si algo puede estar desordenado y te pueda parecer extraño.</p>
+                    <p class="parrafo3">Trataré de que el sitio sea lo más agradable visualmente.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/me-img.jpg" alt="imagen personal"> 
+                </div>
+            </section>
+            <section id="seccion-2">
+                <img src="img/paisaje.jpg" alt="imagen de carrusel">
+            </section>
+        </main>
+
+        <footer id="footer">
+            <h3>Redes sociales y links</h3>
+            <ul>
+                <a href="https://www.instagram.com/duran_heber/">Instagram</a>
+            </ul>
+        </footer>
+        
+        <button id="btn-generar">Generar Frase Aleatoria</button>
+        <footer id="footer">
+            <p id="frase"></p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
